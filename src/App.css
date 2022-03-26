@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.App {
+  /* measurements */
+  width: 800px;
+  margin: 50px auto;
+  /* colors */
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+h2 {
+  color: #070707;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: auto;
+  color: #000000;
+}
+
+/* =======
+  form and components
+   ======= */
+
+.Form {
+  /* measurements */
+  padding: 50px;
+  width: 50%;
+  align-items: center;
+  /* colors */
+  background-color: #ff9900;
+  /* border properties */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.575);
+  border-radius: 100px;
+  /* layouts */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* -------Styling Inputs--------- */
+.inputField {
+  /* measurements */
+  padding-top: 20px;
+  /* position */
+  position: relative;
+}
+
+.inputField input {
+  /* to remove all the browser styling */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* measurements */
+  width: 250px;
+  padding: 12px;
+  /* text */
+  font-size: 14px;
+  /* border properties */
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.inputField input + .placeholder {
+  /* measurements */
+  padding: 0 5px;
+  /* color */
+  color: #888;
+  /* text */
+  font-size: 14px;
+  /* position */
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 12px;
+  transform: translateY(-50%);
+  /* transition */
+  transition: color 0.3s ease, font-size 0.3s ease, top 0.3s ease;
+}
+/* input on focus */
+.inputField input:valid,
+.inputField input:focus {
+  transition-delay: 0.1s;
+  border-color: #222;
+}
+/* placeholder on focus */
+.inputField input:valid + .placeholder,
+.inputField input:focus + .placeholder {
+  /* position */
+  top: 15px;
+  /* other properties */
+  color: #222;
+  border-bottom: 4px solid #fff;
+  font-size: 10px;
+}
+.Form button {
+  /* measurements */
+  width: fit-content;
+  padding: 1rem 1rem;
+  margin-top: 10px;
+  /* color */
+  background-color: #ffffff;
+  color: black;
+  /* text */
+  font-weight: 700;
+  /* border properties */
+  border: 2px solid #0002;
+  border-radius: 50px;
+  /* layout */
+  align-self: center;
+}
+
+.Form button:hover {
+  background-color: #ff8800;
+  /* state change */
+  cursor: pointer;
+  border-color: #000;
+  color: white;
+}
+
+/* =======
+ Table and its components
+   ======= */
+
+table {
+  /* measurements */
+  padding: 40px;
+  min-width: 900px;
+  /* color */
+  background-color: #ffa43b9a;
+  color: white;
+  /* border properties */
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden; /* to make the borderradius work */
+}
+
+/* styling table rows */
+thead tr {
+  /* color */
+  background-color: #000;
+  color: #ddd;
+  /* text */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+tbody tr {
+  /* color */
+  color: #000000;
+  /* border */
+  border-bottom: 1px solid #666;
+}
+tbody tr:nth-of-type(even) {
+  /* color */
+  background-color: #e4e698;
+}
+tbody tr:last-of-type {
+  /* border properties */
+  border-bottom: 3px solid #000;
+  border-radius: 50%;
+}
+
+/* styling table cells */
+thead th {
+  padding: 12px 16px;
+}
+
+tbody td {
+  padding: 8px 16px;
+}
+
+/* styling buttons */
+tbody button {
+  /* measurements */
+  padding: 4px 6px;
+  margin: 0 3px;
+  /* colors */
+  background-color: #ffae00;
+  color: #181000;
+  /* border properties  */
+  border: none;
+  border-radius: 5px;
+}
+tbody button:hover {
+  /* color */
+  background-color: #ffae00;
+  /* state change */
+  cursor: pointer;
+}
+.Icons {
+  width: 18px;
+}
+.Icons {
+  width: 18px;
+}
